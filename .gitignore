@@ -1,0 +1,77 @@
+# ---------- 隐私数据（严禁推送远程，含作者个人配置与图标摆放） ----------
+# ★R190（Qoder ROOT-1）：发布令牌严禁入库
+token.txt
+
+config/
+icon_backups/
+
+# ---------- 运行时生成数据 / 日志 ----------
+data/
+logs/
+win10日志/
+*.log.gz
+*.log
+
+# ---------- 打包产物 ----------
+icon_generated.ico
+categories.json/
+build/
+dist/
+dist_onedir/
+dist_onefile/
+dist_nuitka/
+dist_nuitka_standalone/
+dist_待上传/
+*.spec.bak
+*.spec
+
+# ---------- 缓存 / Python ----------
+__pycache__/
+*.py[cod]
+*.exe.log
+
+# ---------- 备份 / 临时 ----------
+backup/
+*.tmp
+*.bak
+
+# ---------- 内部开发/提示词文档（严禁推送远程，含实现细节与 AI 提示词） ----------
+PROMPT_v2.md
+*.prompt.md
+# ---------- 本机开发自测脚本（R65 补充） ----------
+诊断工具/
+# ---------- 代码审查报告（R141 用户定案：不上传 Gitee，本地保留） ----------
+代码报告/
+NUL
+参考软件*/
+参考软件速查.md
+参考软件-系统相关研读*.md
+build_log*
+自动测试报告*.txt
+代码报告TRAE/
+
+# ---------- uv 虚拟环境（R176b）----------
+.venv/
+
+# ---------- 本地文档/工具/环境（★R210 用户 14 批定案：不入库） ----------
+win11_env.txt
+提交到Gitee.bat
+待办存档*.md
+工作进度.md
+.zcode/
+/DEV.md
+代码存档/core误置icon_backups_20260912/hidden_state.json
+
+*.dbk_tmp
+
+# 打包时由 version.txt 自动生成的 README 副本（★R214，不入库）
+_build_README.md
+
+# ---------- ★R229 推 Gitee 前定案：本地留证产物不入库（同类已排除
+# 工作进度.md / 代码报告/ / 诊断工具/）----------
+# 门禁测试的 .txt 是跑出来的证据文件（含本机绝对路径与临时目录），
+# 测试代码 .py 才入库
+测试_ui/*.txt
+# 逐轮变更日志与美化建议（含审查细节、AI 会话口径），本地+压缩包备份
+工作进度qoder.md
+UI美化建议_*.md
