@@ -1,0 +1,27 @@
+# ============================================================
+# DeskBits（拾碎-懒人桌面工具箱）- Python 依赖清单
+# ============================================================
+# 【环境要求】
+#   Python 3.14.x 64 位（开发环境为 3.14.7）
+#   官方安装包下载: https://www.python.org/downloads/
+#   安装时务必勾选：
+#     - Add python.exe to PATH  （加入 PATH，否则"快速启动.bat"找不到 pythonw）
+#     - tcl/tk and IDLE         （tkinter 界面库，默认已勾选，勿取消）
+#
+# 【安装方法】在本目录打开终端执行：
+#   python -m pip install -r requirements.txt
+#   或者直接双击「一键安装环境.bat」自动安装 Python + 本依赖
+#
+# 【依赖说明】
+#   pywin32   Windows API（win32gui/win32api/win32con/win32com 等），核心必需
+#   Pillow    图像处理（PIL.Image/ImageTk，图标与预览图渲染），核心必需
+#   psutil    进程/性能信息，仅「诊断工具/诊断变卡.py」使用，可选
+#   pynput    全局鼠标监听（📊 统计页"图标打开榜"采集），缺失时该功能自动禁用
+#
+# 【注意】tkinter 属于 Python 自带库，随官方安装包一起安装，无需 pip 安装
+# ============================================================
+
+pywin32==312
+Pillow>=12.3
+psutil>=7.2
+pynput>=1.8
